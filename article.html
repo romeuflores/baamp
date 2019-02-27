@@ -42,7 +42,7 @@
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-
+  <script async custom-element="amp-date-picker" src="https://cdn.ampproject.org/v0/amp-date-picker-0.1.js"></script>
 </head>
 <body>
   <header>
@@ -63,7 +63,18 @@
           <option value="paris">Paris</option>
           <option value="warsaw">Warsaw</option>
         </select>
-        
+      </form>
+      <form
+        method="post"
+        action-xhr="/form/echo-json/post"
+        target="_blank">
+        <amp-date-picker
+          mode="overlay"
+          layout="container"
+          input-selector="[name=outbounddate]">
+          <label for="outbounddate">Outbound:</label>
+          <input type="text" name="outbounddate">
+        </amp-date-picker>
       </form>
     </div>
   </article>
