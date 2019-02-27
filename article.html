@@ -7,7 +7,7 @@
   <link rel="canonical" href="/article.html">
   <link rel="shortcut icon" href="amp_favicon.png">
 
-  <title>News Article</title>
+  <title>British Airways</title>
 
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <style amp-custom>
@@ -36,13 +36,8 @@
       padding: 0.5em;
       margin: 0.5em;
     }
-
-
-
-
-
-
   </style>
+  
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
@@ -50,26 +45,29 @@
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
   <script async custom-element="amp-date-picker" src="https://cdn.ampproject.org/v0/amp-date-picker-0.1.js"></script>
 </head>
+
 <body>
   <article>
     <div>
-      <form class="sample-form"
-        method="post"
-        action-xhr="/components/amp-form/submit-form-xhr"
-        target="_top">
-        <label for="cities">From </label>
-        </br>
-        <select name="cities" id="cities">
-          <option value="london">London</option>
-          <option value="barcelona">Barcelona</option>
-          <option value="paris">Paris</option>
-          <option value="warsaw">Warsaw</option>
-        </select>
-      </form>
+
       <form
         method="post"
         action-xhr="/form/echo-json/post"
         target="_blank">
+        <amp-list width="auto"
+          height="25"
+          layout="fixed-height"
+          src="https://sweltering-snail.glitch.me/json">
+          <template type="amp-mustache">
+            <select
+              id="city">
+              {{#results}}
+                <option value="{{.}}">{{.}}</option> 
+              {{/results}}
+            </select>
+          </template>
+        </amp-list>
+
         <amp-date-picker
           mode="overlay"
           layout="container"
@@ -78,6 +76,7 @@
           <input type="text" name="outbounddate">
         </amp-date-picker>
       </form>
+
     </div>
   </article>
 </body>
