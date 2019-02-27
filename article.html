@@ -56,7 +56,6 @@
       height: 24px;
     }
 
-
   </style>
   
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -69,31 +68,16 @@
 
 <body>
   <article>
-    <div class="flightsearch">
-      <div class="searchSelector">
-        From
-        <amp-list width="auto"
-          height="25"
-          layout="fixed-height"
-          src="https://sweltering-snail.glitch.me/json">
-          <template type="amp-mustache">
-            <select
-              id="city">
-              {{#results}}
-                <option value="{{.}}">{{.}}</option> 
-              {{/results}}
-            </select>
-          </template>
-        </amp-list>
-      </div>
-      <div class="searchSelector">
-        To
+    <form method="post" action-xhr="/form/echo-json/post" target="_blank">
+      <div class="flightsearch">
+        <div class="searchSelector">
+          <label>From</label>
           <amp-list width="auto"
             height="25"
             layout="fixed-height"
             src="https://sweltering-snail.glitch.me/json">
             <template type="amp-mustache">
-              <select id="select-city"
+              <select
                 id="city">
                 {{#results}}
                   <option value="{{.}}">{{.}}</option> 
@@ -101,26 +85,43 @@
               </select>
             </template>
           </amp-list>
+        </div>
+        <div class="searchSelector">
+            <label>To</label>
+            <amp-list width="auto"
+              height="25"
+              layout="fixed-height"
+              src="https://sweltering-snail.glitch.me/json">
+              <template type="amp-mustache">
+                <select id="select-city"
+                  id="city">
+                  {{#results}}
+                    <option value="{{.}}">{{.}}</option> 
+                  {{/results}}
+                </select>
+              </template>
+            </amp-list>
+        </div>
+        <div id="outdtpicker">
+          <amp-date-picker
+            mode="overlay"
+            layout="container"
+            input-selector="[name=outbounddate]">
+            <label for="outbounddate">Outbound:</label>
+            <input type="text" name="outbounddate">
+          </amp-date-picker>
+        </div>
+        <div id="rtndtpicker">
+          <amp-date-picker
+            mode="overlay"
+            layout="container"
+            input-selector="[name=returndate]">
+            <label for="outbounddate">Return:</label>
+            <input type="text" name="returndate">
+          </amp-date-picker>
+        </div>
       </div>
-      <div id="outdtpicker">
-        <amp-date-picker
-          mode="overlay"
-          layout="container"
-          input-selector="[name=outbounddate]">
-          <label for="outbounddate">Outbound:</label>
-          <input type="text" name="outbounddate">
-        </amp-date-picker>
-      </div>
-      <div id="rtndtpicker">
-        <amp-date-picker
-          mode="overlay"
-          layout="container"
-          input-selector="[name=returndate]">
-          <label for="outbounddate">Return:</label>
-          <input type="text" name="returndate">
-        </amp-date-picker>
-      </div>
-    </div>
+    </form>
   </article>
 </body>
 </html>
