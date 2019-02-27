@@ -36,6 +36,20 @@
       padding: 0.5em;
       margin: 0.5em;
     }
+
+    .flightsearch {
+      display: block;
+      height: 300px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      background: #fff;
+      border-radius: 2px;
+      margin-left: -100px;
+      margin-top: -100px;
+      position: fixed;
+      top: 50%;
+      left: 30%;
+      width: 430px;
+    }
   </style>
   
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -48,12 +62,9 @@
 
 <body>
   <article>
-    <div>
+    <div class="flightsearch">
 
-      <form
-        method="post"
-        action-xhr="/form/echo-json/post"
-        target="_blank">
+
         <div id="searchFrom">
           <amp-list width="auto"
             height="25"
@@ -86,6 +97,7 @@
               </template>
             </amp-list>
         </div>
+      <div id="dtpicker">
         <amp-date-picker
           mode="overlay"
           layout="container"
@@ -93,7 +105,7 @@
           <label for="outbounddate">Outbound:</label>
           <input type="text" name="outbounddate">
         </amp-date-picker>
-      </form>
+      </div>
 
     </div>
   </article>
