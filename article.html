@@ -54,20 +54,38 @@
         method="post"
         action-xhr="/form/echo-json/post"
         target="_blank">
-        <amp-list width="auto"
-          height="25"
-          layout="fixed-height"
-          src="https://sweltering-snail.glitch.me/json">
-          <template type="amp-mustache">
-            <select
-              id="city">
-              {{#results}}
-                <option value="{{.}}">{{.}}</option> 
-              {{/results}}
-            </select>
-          </template>
-        </amp-list>
-
+        <div id="searchFrom">
+          <amp-list width="auto"
+            height="25"
+            layout="fixed-height"
+            src="https://sweltering-snail.glitch.me/json">
+            <template type="amp-mustache">
+              <label> From </label>
+              <select
+                id="city">
+                {{#results}}
+                  <option value="{{.}}">{{.}}</option> 
+                {{/results}}
+              </select>
+            </template>
+          </amp-list>
+        </div>
+        <div id="searchTo">
+            <amp-list width="auto"
+              height="25"
+              layout="fixed-height"
+              src="https://sweltering-snail.glitch.me/json">
+              <template type="amp-mustache">
+                <label> To </label>
+                <select
+                  id="city">
+                  {{#results}}
+                    <option value="{{.}}">{{.}}</option> 
+                  {{/results}}
+                </select>
+              </template>
+            </amp-list>
+        </div>
         <amp-date-picker
           mode="overlay"
           layout="container"
