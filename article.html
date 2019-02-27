@@ -97,13 +97,22 @@
               </template>
             </amp-list>
         </div>
-      <div id="dtpicker">
+      <div id="outdtpicker">
         <amp-date-picker
           mode="overlay"
           layout="container"
           input-selector="[name=outbounddate]">
           <label for="outbounddate">Outbound:</label>
           <input type="text" name="outbounddate">
+        </amp-date-picker>
+      </div>
+      <div id="rtndtpicker">
+        <amp-date-picker
+          mode="overlay"
+          layout="container"
+          input-selector="[name=returndate]">
+          <label for="outbounddate">Return:</label>
+          <input type="text" name="returndate">
         </amp-date-picker>
       </div>
 
