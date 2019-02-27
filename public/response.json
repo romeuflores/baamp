@@ -1,40 +1,34 @@
 {
   "items": [{
     "id": 1,
-    "img": "https://d2rp9bqx0m7ihv.cloudfront.net/media/1/photos/products/116950/116950-8427458006262-1_3_g.jpeg",
-    "name": "Miscota MiscoBones",
-    "brand": "Miscota",
-    "price": "2.32",
-    "discount": "-24",
-    "stars": "&#9733;&#9733;&#9733;&#9733;&#9733;",
-    "url": "https://www.miscota.co.uk/dogs/miscota/miscobones"
+    "city": "London",
+    "description": "London City",
+    "code": "LCY",
+    "country": "United Kingdom"
   },{
     "id": 2,
-    "img": "https://d2rp9bqx0m7ihv.cloudfront.net/media/1/photos/products/116958/116958-15-miscotoffysalmon-200-01_1_g.jpg",
-    "name": "MiscoToffy Salmon",
-    "brand": "Miscota",
-    "price": "2.64",
-    "discount": "-25",
-    "stars": "&#9733;&#9733;&#9733;&#9733;&#9733;",
-    "url": "https://www.miscota.co.uk/dogs/miscota/miscotoffy-salmon"
+    "city": "London",
+    "description": "London Gatwick",
+    "code": "LGW",
+    "country": "United Kingdom"
   },{
     "id": 3,
-    "img": "https://d2rp9bqx0m7ihv.cloudfront.net/media/1/photos/products/042019/42019-7613034083562_1_g.jpg",
-    "name": "Duo Delice Adult Chicken",
-    "brand": "Pro Plan",
-    "price": "9.86",
-    "discount": "-44",
-    "stars": "&#9733;&#9733;&#9733;&#9733;&#9733;",
-    "url": "https://www.miscota.co.uk/dogs/pro-plan/duo-delice-adult-chicken"
+    "city": "London",
+    "description": "London Heathrow",
+    "code": "LHR",
+    "country": "United Kingdom"
   },{
     "id": 4,
-    "img": "https://d2rp9bqx0m7ihv.cloudfront.net/media/1/photos/products/016276/16276-8430235680814_1_g.jpg",
-    "name": "Bastoncini iberici",
-    "brand": "Mediterranean",
-    "price": "6.87",
-    "discount": "-14",
-    "stars": "&#9733;&#9733;&#9733;&#9733;&#9733;",
-    "url": "https://www.miscota.co.uk/dogs/mediterranean-natural/barritas-de-pescado-70u"
+    "city": "London",
+    "description": "London Stansted",
+    "code": "STN",
+    "country": "United Kingdom"
+  },{
+    "id": 5,
+    "city": "New York",
+    "description": "John F Kennedy",
+    "code": "JFK",
+    "country": "USA"
   }
   ]
 }
