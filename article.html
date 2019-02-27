@@ -15,6 +15,7 @@
       width: auto;
       margin: 0;
       padding: 0;
+      background-image: url(ba-bg_1920x1080.jpg);
     }
 
     header {
@@ -37,17 +38,34 @@
     }
   </style>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
 </head>
 <body>
-<header>
-  News Site
-</header>
-<article>
-  <h1>Article Name</h1>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas tortor sapien, non tristique ligula accumsan eu.</p>
-
-  <amp-img src="ba-bg_1920x1080.jpg" layout="responsive" width="266" height="150"></amp-img>
-</article>
+  <header>
+    British Airways
+  </header>
+  <article>
+    <h1>British Airways</h1>
+    <div>
+      <form class="sample-form"
+        method="post"
+        action-xhr="/components/amp-form/submit-form-xhr"
+        target="_top">
+        <label for="cities">From </label>
+        </br>
+        <select name="cities" id="cities">
+          <option value="london">London</option>
+          <option value="barcelona">Barcelona</option>
+          <option value="paris">Paris</option>
+          <option value="warsaw">Warsaw</option>
+        </select>
+        
+      </form>
+    </div>
+  </article>
 </body>
 </html>
