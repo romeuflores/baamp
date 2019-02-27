@@ -1,0 +1,26 @@
+{
+  "//1": "This is a simple express.js server implementing CORS serving a test JSON file that can be used in an amp-list",
+  "//2": "https://www.ampproject.org/docs/reference/components/amp-list",
+  "name": "amp-json-test",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/amp-json-test"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
