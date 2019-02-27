@@ -1,34 +1,4 @@
-{
-  "items": [{
-    "id": 1,
-    "city": "London",
-    "description": "London City",
-    "code": "LCY",
-    "country": "United Kingdom"
-  },{
-    "id": 2,
-    "city": "London",
-    "description": "London Gatwick",
-    "code": "LGW",
-    "country": "United Kingdom"
-  },{
-    "id": 3,
-    "city": "London",
-    "description": "London Heathrow",
-    "code": "LHR",
-    "country": "United Kingdom"
-  },{
-    "id": 4,
-    "city": "London",
-    "description": "London Stansted",
-    "code": "STN",
-    "country": "United Kingdom"
-  },{
-    "id": 5,
-    "city": "New York",
-    "description": "John F Kennedy",
-    "code": "JFK",
-    "country": "USA"
-  }
-  ]
-}
+
+
+
+{"items":[{"query":"","results":["London, City Airport (LCY), United Kingdom" , "London, Heathrow Airport (LHR), United Kingdom","New York, John F Kennedy (JFK), USA"]}]}
